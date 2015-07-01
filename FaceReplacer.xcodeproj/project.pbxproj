@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84440BFC1B43F2F900A44456 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84440BFA1B43F2F900A44456 /* Main.storyboard */; };
+		84440BFE1B43F2F900A44456 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84440BFD1B43F2F900A44456 /* Images.xcassets */; };
+		84440C011B43F2F900A44456 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84440BFF1B43F2F900A44456 /* LaunchScreen.xib */; };
+		84440C0D1B43F2FA00A44456 /* FaceReplacerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84440C0C1B43F2FA00A44456 /* FaceReplacerTests.swift */; };
+		84440C201B43F75400A44456 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84440C1F1B43F75400A44456 /* UIKit.framework */; };
+		84440C221B43F78A00A44456 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84440C211B43F78A00A44456 /* MainVC.swift */; };
+		84440C251B43FA9500A44456 /* UIImage+FaceReplace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84440C241B43FA9500A44456 /* UIImage+FaceReplace.swift */; };
+		84440C271B43FB2700A44456 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84440C261B43FB2700A44456 /* AppDelegate.swift */; };
+		84440C291B440FC300A44456 /* UIImage+Crop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84440C281B440FC300A44456 /* UIImage+Crop.swift */; };
+		84440C2B1B44111800A44456 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84440C2A1B44111800A44456 /* UIImage+Resize.swift */; };
+		84440C2D1B44156700A44456 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84440C2C1B44156700A44456 /* CoreImage.framework */; };
+		84440C2F1B441A8A00A44456 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84440C2E1B441A8A00A44456 /* QuartzCore.framework */; };
+		84440C311B441A9200A44456 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84440C301B441A9200A44456 /* Foundation.framework */; };
+		845AC6EA1B44419A002C9B99 /* Array+Shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845AC6E91B44419A002C9B99 /* Array+Shuffle.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84440C071B43F2FA00A44456 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84440BE91B43F2F800A44456 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84440BF01B43F2F800A44456;
+			remoteInfo = FaceReplacer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84440BF11B43F2F800A44456 /* FaceReplacer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceReplacer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84440BF51B43F2F900A44456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84440BFB1B43F2F900A44456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84440BFD1B43F2F900A44456 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		84440C001B43F2F900A44456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		84440C061B43F2FA00A44456 /* FaceReplacerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceReplacerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84440C0B1B43F2FA00A44456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84440C0C1B43F2FA00A44456 /* FaceReplacerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceReplacerTests.swift; sourceTree = "<group>"; };
+		84440C1A1B43F47600A44456 /* FaceReplacer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FaceReplacer-Bridging-Header.h"; sourceTree = "<group>"; };
+		84440C1F1B43F75400A44456 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		84440C211B43F78A00A44456 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainVC.swift; path = Sources/ViewControllers/MainVC/MainVC.swift; sourceTree = "<group>"; };
+		84440C241B43FA9500A44456 /* UIImage+FaceReplace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+FaceReplace.swift"; path = "Sources/CustomClasses/Extensions/UIImage+FaceReplace.swift"; sourceTree = "<group>"; };
+		84440C261B43FB2700A44456 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Sources/AppDelegate.swift; sourceTree = "<group>"; };
+		84440C281B440FC300A44456 /* UIImage+Crop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Crop.swift"; path = "Sources/CustomClasses/Extensions/UIImage+Crop.swift"; sourceTree = "<group>"; };
+		84440C2A1B44111800A44456 /* UIImage+Resize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Resize.swift"; path = "Sources/CustomClasses/Extensions/UIImage+Resize.swift"; sourceTree = "<group>"; };
+		84440C2C1B44156700A44456 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		84440C2E1B441A8A00A44456 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		84440C301B441A9200A44456 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		845AC6E91B44419A002C9B99 /* Array+Shuffle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Array+Shuffle.swift"; path = "Sources/CustomClasses/Extensions/Array+Shuffle.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84440BEE1B43F2F800A44456 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84440C311B441A9200A44456 /* Foundation.framework in Frameworks */,
+				84440C2F1B441A8A00A44456 /* QuartzCore.framework in Frameworks */,
+				84440C2D1B44156700A44456 /* CoreImage.framework in Frameworks */,
+				84440C201B43F75400A44456 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84440C031B43F2FA00A44456 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84440BE81B43F2F800A44456 = {
+			isa = PBXGroup;
+			children = (
+				84440BF31B43F2F800A44456 /* FaceReplacer */,
+				84440C091B43F2FA00A44456 /* FaceReplacerTests */,
+				84440BF21B43F2F800A44456 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84440BF21B43F2F800A44456 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84440BF11B43F2F800A44456 /* FaceReplacer.app */,
+				84440C061B43F2FA00A44456 /* FaceReplacerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84440BF31B43F2F800A44456 /* FaceReplacer */ = {
+			isa = PBXGroup;
+			children = (
+				84440C161B43F41000A44456 /* Sources */,
+				84440C261B43FB2700A44456 /* AppDelegate.swift */,
+				84440C171B43F41600A44456 /* UIs */,
+				84440BF41B43F2F800A44456 /* Supporting Files */,
+			);
+			path = FaceReplacer;
+			sourceTree = "<group>";
+		};
+		84440BF41B43F2F800A44456 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84440C301B441A9200A44456 /* Foundation.framework */,
+				84440C2E1B441A8A00A44456 /* QuartzCore.framework */,
+				84440C2C1B44156700A44456 /* CoreImage.framework */,
+				84440C1F1B43F75400A44456 /* UIKit.framework */,
+				84440C1A1B43F47600A44456 /* FaceReplacer-Bridging-Header.h */,
+				84440BFD1B43F2F900A44456 /* Images.xcassets */,
+				84440BFF1B43F2F900A44456 /* LaunchScreen.xib */,
+				84440BF51B43F2F900A44456 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84440C091B43F2FA00A44456 /* FaceReplacerTests */ = {
+			isa = PBXGroup;
+			children = (
+				84440C0C1B43F2FA00A44456 /* FaceReplacerTests.swift */,
+				84440C0A1B43F2FA00A44456 /* Supporting Files */,
+			);
+			path = FaceReplacerTests;
+			sourceTree = "<group>";
+		};
+		84440C0A1B43F2FA00A44456 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84440C0B1B43F2FA00A44456 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84440C161B43F41000A44456 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				84440C191B43F43100A44456 /* CustomClasses */,
+				84440C181B43F42600A44456 /* ViewControllers */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		84440C171B43F41600A44456 /* UIs */ = {
+			isa = PBXGroup;
+			children = (
+				84440BFA1B43F2F900A44456 /* Main.storyboard */,
+			);
+			name = UIs;
+			sourceTree = "<group>";
+		};
+		84440C181B43F42600A44456 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				84440C211B43F78A00A44456 /* MainVC.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		84440C191B43F43100A44456 /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				84440C231B43F9CC00A44456 /* Extensions */,
+			);
+			name = CustomClasses;
+			sourceTree = "<group>";
+		};
+		84440C231B43F9CC00A44456 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				84440C241B43FA9500A44456 /* UIImage+FaceReplace.swift */,
+				84440C281B440FC300A44456 /* UIImage+Crop.swift */,
+				84440C2A1B44111800A44456 /* UIImage+Resize.swift */,
+				845AC6E91B44419A002C9B99 /* Array+Shuffle.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84440BF01B43F2F800A44456 /* FaceReplacer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84440C101B43F2FA00A44456 /* Build configuration list for PBXNativeTarget "FaceReplacer" */;
+			buildPhases = (
+				84440BED1B43F2F800A44456 /* Sources */,
+				84440BEE1B43F2F800A44456 /* Frameworks */,
+				84440BEF1B43F2F800A44456 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FaceReplacer;
+			productName = FaceReplacer;
+			productReference = 84440BF11B43F2F800A44456 /* FaceReplacer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84440C051B43F2FA00A44456 /* FaceReplacerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84440C131B43F2FA00A44456 /* Build configuration list for PBXNativeTarget "FaceReplacerTests" */;
+			buildPhases = (
+				84440C021B43F2FA00A44456 /* Sources */,
+				84440C031B43F2FA00A44456 /* Frameworks */,
+				84440C041B43F2FA00A44456 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84440C081B43F2FA00A44456 /* PBXTargetDependency */,
+			);
+			name = FaceReplacerTests;
+			productName = FaceReplacerTests;
+			productReference = 84440C061B43F2FA00A44456 /* FaceReplacerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84440BE91B43F2F800A44456 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Admin;
+				TargetAttributes = {
+					84440BF01B43F2F800A44456 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					84440C051B43F2FA00A44456 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 84440BF01B43F2F800A44456;
+					};
+				};
+			};
+			buildConfigurationList = 84440BEC1B43F2F800A44456 /* Build configuration list for PBXProject "FaceReplacer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84440BE81B43F2F800A44456;
+			productRefGroup = 84440BF21B43F2F800A44456 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84440BF01B43F2F800A44456 /* FaceReplacer */,
+				84440C051B43F2FA00A44456 /* FaceReplacerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84440BEF1B43F2F800A44456 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84440BFC1B43F2F900A44456 /* Main.storyboard in Resources */,
+				84440C011B43F2F900A44456 /* LaunchScreen.xib in Resources */,
+				84440BFE1B43F2F900A44456 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84440C041B43F2FA00A44456 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84440BED1B43F2F800A44456 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84440C271B43FB2700A44456 /* AppDelegate.swift in Sources */,
+				845AC6EA1B44419A002C9B99 /* Array+Shuffle.swift in Sources */,
+				84440C291B440FC300A44456 /* UIImage+Crop.swift in Sources */,
+				84440C221B43F78A00A44456 /* MainVC.swift in Sources */,
+				84440C2B1B44111800A44456 /* UIImage+Resize.swift in Sources */,
+				84440C251B43FA9500A44456 /* UIImage+FaceReplace.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84440C021B43F2FA00A44456 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84440C0D1B43F2FA00A44456 /* FaceReplacerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84440C081B43F2FA00A44456 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84440BF01B43F2F800A44456 /* FaceReplacer */;
+			targetProxy = 84440C071B43F2FA00A44456 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84440BFA1B43F2F900A44456 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84440BFB1B43F2F900A44456 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84440BFF1B43F2F900A44456 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84440C001B43F2F900A44456 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84440C0E1B43F2FA00A44456 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yuriy Zhuravel (Z2ZVN74LFH)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "c42fe4a4-5b5d-442f-9a59-92e8dc2b0db5";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84440C0F1B43F2FA00A44456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yuriy Zhuravel (Z2ZVN74LFH)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "c42fe4a4-5b5d-442f-9a59-92e8dc2b0db5";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84440C111B43F2FA00A44456 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = FaceReplacer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FaceReplacer/FaceReplacer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84440C121B43F2FA00A44456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = FaceReplacer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FaceReplacer/FaceReplacer-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		84440C141B43F2FA00A44456 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FaceReplacerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FaceReplacer.app/FaceReplacer";
+			};
+			name = Debug;
+		};
+		84440C151B43F2FA00A44456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FaceReplacerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FaceReplacer.app/FaceReplacer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84440BEC1B43F2F800A44456 /* Build configuration list for PBXProject "FaceReplacer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84440C0E1B43F2FA00A44456 /* Debug */,
+				84440C0F1B43F2FA00A44456 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84440C101B43F2FA00A44456 /* Build configuration list for PBXNativeTarget "FaceReplacer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84440C111B43F2FA00A44456 /* Debug */,
+				84440C121B43F2FA00A44456 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84440C131B43F2FA00A44456 /* Build configuration list for PBXNativeTarget "FaceReplacerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84440C141B43F2FA00A44456 /* Debug */,
+				84440C151B43F2FA00A44456 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84440BE91B43F2F800A44456 /* Project object */;
+}
