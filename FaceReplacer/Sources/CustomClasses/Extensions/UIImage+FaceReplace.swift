@@ -21,7 +21,7 @@ extension UIImage {
         return self.swapFacesRandomly(faces!, onImage: self)
     }
     
-    func recognizeFaces(inputImage: UIImage) -> [CIFaceFeature]? {
+    private func recognizeFaces(inputImage: UIImage) -> [CIFaceFeature]? {
         let image:CoreImage = CoreImage(CGImage: inputImage.CGImage!)
         let context = CIContext(options: nil)
         
@@ -37,7 +37,7 @@ extension UIImage {
         return features
     }
     
-    func swapFacesRandomly(faces: [CIFaceFeature], onImage sourceImage: UIImage) -> UIImage?{
+    private func swapFacesRandomly(faces: [CIFaceFeature], onImage sourceImage: UIImage) -> UIImage?{
         var facesCopy = faces
         var originalFaces = faces
         originalFaces.shuffle()
@@ -45,20 +45,25 @@ extension UIImage {
         var tempEditedImage: UIImage? = sourceImage
         var croppedRandomizedFaces = [UIImage]()
         
+        let flipY = CGAffineTransformMakeScale(1.0, -1.0)
+        let flipThenShift = CGAffineTransformTranslate(flipY, 0, -sourceImage.size.height)
+        
         for index in 0..<originalFaces.count {
             let originalFace:CIFaceFeature = originalFaces[index]
             let randomizedFace:CIFaceFeature = facesCopy[index]
             
-            let tempImage = sourceImage.croppedImage(randomizedFace.bounds)!
+            let convertedRect = CGRectApplyAffineTransform(randomizedFace.bounds, flipThenShift)
+            
+            let tempImage = sourceImage.croppedImage(convertedRect)!
             croppedRandomizedFaces.append(tempImage.scaleImage(tempImage, toSize: originalFace.bounds.size))
         }
         
         for index in 0..<originalFaces.count {
-            let originalFace:CIFaceFeature = originalFaces[index]
+            let originalFace: CIFaceFeature = originalFaces[index]
             //let randomizedFace:CIFaceFeature = facesCopy[index]
             
             tempEditedImage = self.drawPiece(croppedRandomizedFaces[index],
-                                             inRect: originalFace.bounds,
+                                             inRect: CGRectApplyAffineTransform(originalFace.bounds, flipThenShift),
                                              onImage: tempEditedImage!)
         }
         
@@ -70,8 +75,17 @@ extension UIImage {
         UIGraphicsBeginImageContextWithOptions(sourceImageRect.size, false, 1.0)
         
         let context = UIGraphicsGetCurrentContext()
+
         sourceImage.drawInRect(sourceImageRect)
-        piece.drawInRect(newRect)
+        
+        let flip = CGAffineTransformMakeScale(1.0, -1.0)
+        let flipThenShift = CGAffineTransformTranslate(flip, 0, -sourceImage.size.height)
+        
+        var rotatedImage = CoreImage(CGImage: piece.CGImage!)
+        rotatedImage = rotatedImage.imageByApplyingTransform(flipThenShift)
+        
+        let finalPiece = UIImage(CIImage: rotatedImage)
+        finalPiece.drawInRect(newRect)
         
         CGContextSetLineWidth(context, 10)
         CGContextSetStrokeColorWithColor(context, UIColor.redColor().CGColor)
