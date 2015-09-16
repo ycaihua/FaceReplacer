@@ -52,7 +52,7 @@ class MainVC: UIViewController, UIImagePickerControllerDelegate, UINavigationCon
                         self.photoImageView.image = resultImage
                     }
                     else {
-                        var alertView = UIAlertView(title: "Face recognition problem",
+                        let alertView = UIAlertView(title: "Face recognition problem",
                                                     message: "Can't find faces and swap them. Please chose another photo",
                                                     delegate: nil,
                                                     cancelButtonTitle: "OK")
@@ -64,7 +64,7 @@ class MainVC: UIViewController, UIImagePickerControllerDelegate, UINavigationCon
             })
         }
         else {
-            var alertView = UIAlertView(title: "Image is empty",
+            let alertView = UIAlertView(title: "Image is empty",
                                         message: "Please chose photo from library before swapping faces",
                                         delegate: nil,
                                         cancelButtonTitle: "OK")
@@ -78,8 +78,8 @@ class MainVC: UIViewController, UIImagePickerControllerDelegate, UINavigationCon
     
     // MARK: - UIImagePickerControllerDelegate methods
     
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
-        var originalImage: UIImage? = info[UIImagePickerControllerOriginalImage] as! UIImage?
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        let originalImage: UIImage? = info[UIImagePickerControllerOriginalImage] as! UIImage?
         
         if let libraryImage = originalImage {
             self.photoImageView.image = libraryImage
@@ -88,7 +88,7 @@ class MainVC: UIViewController, UIImagePickerControllerDelegate, UINavigationCon
             
         }
         else {
-            var alertView = UIAlertView(title: "Error",
+            let alertView = UIAlertView(title: "Error",
                                         message: "Can't get image",
                                         delegate: nil,
                                         cancelButtonTitle: "OK")

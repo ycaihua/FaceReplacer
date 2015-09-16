@@ -226,11 +226,14 @@
 		84440BE91B43F2F800A44456 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Admin;
 				TargetAttributes = {
 					84440BF01B43F2F800A44456 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 39LEQUH6G6;
 					};
 					84440C051B43F2FA00A44456 = {
 						CreatedOnToolsVersion = 6.3;
@@ -351,6 +354,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -369,7 +373,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "c42fe4a4-5b5d-442f-9a59-92e8dc2b0db5";
+				PROVISIONING_PROFILE = "c74f118a-b13e-4ac7-ad77-b54544c9dda7";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -409,7 +413,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "c42fe4a4-5b5d-442f-9a59-92e8dc2b0db5";
+				PROVISIONING_PROFILE = "c74f118a-b13e-4ac7-ad77-b54544c9dda7";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -421,9 +425,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FaceReplacer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YuriiZhuravel.FaceReplacer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c74f118a-b13e-4ac7-ad77-b54544c9dda7";
 				SWIFT_OBJC_BRIDGING_HEADER = "FaceReplacer/FaceReplacer-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -434,9 +441,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FaceReplacer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YuriiZhuravel.FaceReplacer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c74f118a-b13e-4ac7-ad77-b54544c9dda7";
 				SWIFT_OBJC_BRIDGING_HEADER = "FaceReplacer/FaceReplacer-Bridging-Header.h";
 			};
 			name = Release;
@@ -455,6 +465,7 @@
 				);
 				INFOPLIST_FILE = FaceReplacerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YuriiZhuravel.FaceReplacer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FaceReplacer.app/FaceReplacer";
 			};
@@ -470,6 +481,7 @@
 				);
 				INFOPLIST_FILE = FaceReplacerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YuriiZhuravel.FaceReplacer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FaceReplacer.app/FaceReplacer";
 			};

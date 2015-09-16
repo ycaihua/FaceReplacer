@@ -12,7 +12,7 @@ import Foundation
 extension UIImage {
     
     func croppedImage(rectangle: CGRect) -> UIImage? {
-        var cgImage:CGImageRef = CGImageCreateWithImageInRect(self.CGImage, rectangle)
+        let cgImage:CGImageRef = CGImageCreateWithImageInRect(self.CGImage, rectangle)!
         return UIImage(CGImage: cgImage)
     }
 }
